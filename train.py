@@ -160,7 +160,7 @@ def test(dataloader, model, loss_fn):
 
 
 
-logname = "/home/abdullah/Desktop/DyTGateformer/Experiments_cifar10/logs_dytgateformer/logs_cifar10.csv"
+logname = "/PATH/DyTGateformer/Experiments_cifar10/logs_dytgateformer/logs_cifar10.csv"
 if not os.path.exists(logname):
   with open(logname, 'w') as logfile:
     logwriter = csv.writer(logfile, delimiter=',')
@@ -181,7 +181,7 @@ print("Done!")
 
 
 
-path = "/home/abdullah/Desktop/DyTGateformer/Experiments_cifar10/weights_dytgateformer"
+path = "/PATH/DyTGateformer/Experiments_cifar10/weights_dytgateformer"
 model_name = "DytGateFormerImageClassification_cifar10"
 torch.save(model.state_dict(), f"{path}/{model_name}.pth")
 print(f"Saved Model State to {path}/{model_name}.pth ")
